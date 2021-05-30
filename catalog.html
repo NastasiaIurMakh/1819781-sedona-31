@@ -3,6 +3,193 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-
   </head>
-  
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img src="https://via.placeholder.com/138x70" alt="Логотип Седона">
+        </a>
+        <ul>
+          <li><a href="">Информация</a></li>
+          <li><a href="">Фото и видео</a></li>
+          <li><a href="">Карта штата</a></li>
+          <li><a href="">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Подбор жилья</h1>
+      <section>
+        <h2>Параметры жилья</h2>
+        <form method="get" action="#">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li>
+                <label><input type="checkbox" name="pool" checked>
+                  Бассейн</label>
+              </li>
+              <li>
+                <label><input type="checkbox" name="parking">
+                  Парковка</label>
+              </li>
+              <li>
+                <label><input type="checkbox" name="wi-fi">
+                  Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <label><input type="checkbox" name="hotel" checked>
+                  Гостиница</label>
+              </li>
+              <li>
+                <label><input type="checkbox" name="motel" checked>
+                  Мотель</label>
+              </li>
+              <li>
+                <label><input type="checkbox" name="apartment" checked>
+                  Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки, ₽:</legend>
+            <div>
+              <div>
+                от<input type="number" min="0" name="min price" value="0">
+              </div>
+              <div>
+                до<input type="number" max="4000" name="max price" value="3000">
+              </div>
+              <input type="range" min="0" max="4000" step="10" value="0">
+              <input type="range" min="0" max="4000" step="10" value="3000">
+            </div>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
+      </section>
+      <section>
+        <h2>Список жилья</h2>
+        <div>
+          <p>Найдено: 3</p>
+        </div>
+        <div>
+          <p>Сортировка:</p>
+          <ul>
+            <li>По цене</li>
+            <li>По типу</li>
+            <li>По рейтингу</li>
+          </ul>
+        </div>
+        <ul>
+          <li><button type="button" name="up"></button></li>
+          <li><button type="button" name="down"></button></li>
+        </ul>
+        <ul>
+          <li>
+            <div>
+              <img src="https://via.placeholder.com/135x90" alt="Amara Resort & Spa">
+            </div>
+            <div>
+              <a href="#"><h3>Amara Resort & Spa</h3></a>
+              <div>
+                <p>Гостиница</p>
+                <button type="button">Подробнее</button>
+              </div>
+              <div>
+                <p>От 4000 ₽</p>
+                <button type="button">Забронировать</button>
+              </div>
+            </div>
+            <div>
+              <ul>
+                <li><img src="https://via.placeholder.com/19x17" alt="star"></li>
+                <li><img src="https://via.placeholder.com/19x17" alt="star"></li>
+                <li><img src="https://via.placeholder.com/19x17" alt="star"></li>
+                <li><img src="https://via.placeholder.com/19x17" alt="star"></li>
+              </ul>
+              <div>
+                <p>Рейтинг: 8,5</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="https://via.placeholder.com/135x90" alt="Desert Quail Inn">
+            </div>
+            <div>
+              <a href="#"><h3>Desert Quail Inn</h3></a>
+              <div>
+                <p>Мотель</p>
+                <button type="button">Подробнее</button>
+              </div>
+              <div>
+                <p>От 3000 ₽</p>
+                <button type="button">Забронировать</button>
+              </div>
+            </div>
+            <div>
+              <ul>
+                <li><img src="https://via.placeholder.com/19x17" alt="star"></li>
+                <li><img src="https://via.placeholder.com/19x17" alt="star"></li>
+                <li><img src="https://via.placeholder.com/19x17" alt="star"></li>
+              </ul>
+              <div>
+                <p>Рейтинг: 8,9</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="https://via.placeholder.com/135x90" alt="Villas at Poco Diablo">
+            </div>
+            <div>
+              <a href="#"><h3>Villas at Poco Diablo</h3></a>
+              <div>
+                <p>Апартаменты</p>
+                <button type="button">Подробнее</button>
+              </div>
+              <div>
+                <p>От 2000 ₽</p>
+                <button type="button">Забронировать</button>
+              </div>
+            </div>
+            <div>
+              <ul>
+                <li><img src="https://via.placeholder.com/19x17" alt="star"></li>
+                <li><img src="https://via.placeholder.com/19x17" alt="star"></li>
+              </ul>
+              <div>
+                <p>Рейтинг: 9,2</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <div>
+          <p>#visitSEDONA</p>
+          <p>+7 800 555-86-28</p>
+        </div>
+        <ul>
+          <li><a href="#">
+            <img src="https://via.placeholder.com/46x48" alt="twitter"></a></li>
+          <li><a href="#">
+            <img src="https://via.placeholder.com/46x48" alt="facebook"></a></li>
+          <li><a href="#">
+            <img src="https://via.placeholder.com/46x48" alt="youtube"></a></li>
+        </ul>
+        <div>
+          Website by<a href="https://htmlacademy.ru/">
+          <img src="https://via.placeholder.com/115x33" alt="HTML Academy"></a>
+        </div>
+      </div>
+    </footer>
+    </body>
