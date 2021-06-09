@@ -1,0 +1,247 @@
+/* Variables */
+
+:root {
+    --basic_black: #000000;
+    --text_brown: #333333;
+    --light_brown: #766357;
+    --basic_brown: #604E43;
+    --dark-brown: #503E33;
+    --light_blue: #81B3D2;
+    --basic_blue: #669EC0;
+    --dark_blue: #5496BD;
+    --basic_grey: #E5E5E5;
+    --light_grey: #EEEEEE;
+    --light_neutral: #f2f2f2;
+    --basic_white: #FFFFFF;
+}
+
+/* Global */
+
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: var(--text_brown);
+    text-transform: uppercase;
+    background-color: var(--basic_white);
+}
+
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  button {
+    text-transform: uppercase;
+    color: var(--basic_white);
+    text-align: center;
+  }
+
+  input {
+    background-color: var(--light_neutral);
+    color: var(--basic_black);
+    line-height: 26px;
+    font-weight: bold;
+    color: var(--basic_black);
+    text-transform: uppercase;
+  }
+
+  /* Main navigation */
+
+  .main_header {
+    background-color: var(--basic_white);
+  }
+  
+  .site_navigation {
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--basic_black);
+    background-color: transparent;
+  }
+
+  .site_navigation {
+    list-style: none;
+  }
+
+  /* User navigation */
+
+  .site_navigation a {
+    color: var(--basic_black);
+  }
+
+  .site_navigation a:hover {
+    color: var(--light_blue);
+  }
+
+  .site_navigation a:active {
+    color: var(--basic_black);
+  }
+
+  .site_navigation a:focus {
+    color: var(--light_brown);
+  }
+
+  /* Welcome */
+
+  .background {
+    background-image: url("/img/background.jpg");
+    background-repeat: no-repeat;
+  }
+
+  /* Reasons */
+
+  .reasons {
+    text-align: center;
+  }
+
+  .reasons_arizona {
+    font-size: 21px; 
+    font-weight: bold;
+    line-height: 26px;
+    color: var(--basic_black);
+  }
+
+  /* Features */
+
+  .features_list {
+    list-style: none;
+  }
+  
+  .feature_item_photo {
+    text-align: center;
+  }
+
+  .features_item_white {
+    background-color: var(--light_blue);
+    color: var(--basic_white);
+    width: 400px;
+    height: 256px;
+    text-align: center;
+  }
+  
+  .features_item_white h3{
+    font-size: 21px; 
+    font-weight: bold;
+    line-height: 21px;
+  }
+
+  .features_item_pic {
+    text-align: center;
+  }
+  
+  .feature_item_pic h3 {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 21px;
+    color: var(--basic_black);
+  }
+
+  .features_item {
+    text-align: center;
+    background-color: var(--light_grey);
+  }
+
+  .features_item h3 {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 21px;
+    color: var(--basic_black);
+  }
+
+  /* Find hotel */
+
+  .find_hotel {
+    background-color: var(--basic_white);
+    color: var(--basic_black);
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .find_hotel_quest {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .button_find_hotel {
+    background: var(--light_brown);
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+  }
+
+  .button_find_hotel:hover {
+    background-color: var(--basic_brown);
+  }
+
+  .button_find_hotel:active {
+    background-color: var(--dark_brown);
+  }
+
+  /* Forma */
+
+  .form {
+    background-color: var(--basic_white);
+  }
+
+  .form_item {
+    color: var(--basic_black);
+    line-height: 26px;
+    font-weight: bold;
+  }
+
+  .button_form {
+    background-color: var(--light_blue);
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+  }
+
+  .button_form:hover {
+    background-color: var(--basic_blue);
+  }
+
+  .button_form:active {
+    background-color: var(--dark_blue);
+  }
+
+  /* Footer */
+
+  .main-footer {
+    background-color: var(--basic_white);
+    opacity: 0.9;
+  }
+
+  .footer_contacts {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: var(--basic_black)
+  }
+
+  .footer_social {
+    list-style: none;
+  }
+
+  .social_button {
+    background-color: var(--light_blue);
+  }
+
+  .social_button:hover {
+    background-color: var(--basic_blue);
+  }
+
+  .social_button:active {
+    background-color: var(--dark_blue);
+  }
+
+  .footer_copyright {
+    line-height: 26px;
+  }
