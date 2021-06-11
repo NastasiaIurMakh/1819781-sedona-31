@@ -1,3 +1,23 @@
+/* Fonts */
+
+@font-face {
+  font-family: "PT Sans";
+  src: 
+    url("/fonts/PTSans.woff2") format("woff2"),
+    url("/fonts/PTSans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: 
+    url("/fonts/PTSans-Bold.woff2") format("woff2"),
+    url("/fonts/PTSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* Variables */
 
 :root {
@@ -63,6 +83,7 @@ body {
   .site_navigation {
     font-size: 14px;
     line-height: 26px;
+    font-weight: bold;
     color: var(--basic_black);
     background-color: transparent;
   }
@@ -100,12 +121,12 @@ body {
 
   .reasons {
     text-align: center;
+    line-height: 26px;
   }
 
   .reasons_arizona {
     font-size: 21px; 
     font-weight: bold;
-    line-height: 26px;
     color: var(--basic_black);
   }
 
@@ -137,7 +158,7 @@ body {
     text-align: center;
   }
   
-  .feature_item_pic h3 {
+  .features_item_pic h3 {
     font-size: 21px;
     font-weight: bold;
     line-height: 21px;
@@ -182,7 +203,7 @@ body {
   }
 
   .button_find_hotel:active {
-    background-color: var(--dark_brown);
+    background-color: var(--dark-brown);
   }
 
   /* Forma */
