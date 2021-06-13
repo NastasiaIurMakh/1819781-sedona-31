@@ -204,6 +204,7 @@ body {
 
   .button_find_hotel:active {
     background-color: var(--dark-brown);
+    color: rgba(255, 255, 255, 0.3);
   }
 
   /* Forma */
@@ -231,6 +232,7 @@ body {
 
   .button_form:active {
     background-color: var(--dark_blue);
+    color: rgba(255, 255, 255, 0.3);
   }
 
   /* Footer */
