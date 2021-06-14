@@ -50,221 +50,220 @@ body {
     background-color: var(--basic_white);
 }
 
-  a {
-    text-decoration: none;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+a {
+  text-decoration: none;
+}
 
-  button {
-    text-transform: uppercase;
-    color: var(--basic_white);
-    text-align: center;
-  }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-  input {
-    background-color: var(--light_neutral);
-    color: var(--basic_black);
-    line-height: 26px;
-    font-weight: bold;
-    color: var(--basic_black);
-    text-transform: uppercase;
-  }
+/* Main navigation */
 
-  /* Main navigation */
+.main_header {
+  background-color: var(--basic_white);
+}
 
-  .main_header {
-    background-color: var(--basic_white);
-  }
-  
-  .site_navigation {
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: bold;
-    color: var(--basic_black);
-    background-color: transparent;
-  }
+.site_navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--basic_black);
+  background-color: transparent;
+}
 
-  .site_navigation {
-    list-style: none;
-  }
+.site_navigation {
+  list-style: none;
+}
 
-  /* User navigation */
+/* User navigation */
 
-  .site_navigation a {
-    color: var(--basic_black);
-  }
+.site_navigation a {
+  color: var(--basic_black);
+}
 
-  .site_navigation a:hover {
-    color: var(--light_blue);
-  }
+.site_navigation a:hover {
+  color: var(--light_blue);
+}
 
-  .site_navigation a:active {
-    color: var(--basic_black);
-  }
+.site_navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
 
-  .site_navigation a:focus {
-    color: var(--light_brown);
-  }
+.site_navigation a:focus {
+  color: var(--light_brown);
+}
 
-  /* Welcome */
+/* Welcome */
 
-  .background {
-    background-image: url("/img/background.jpg");
-    background-repeat: no-repeat;
-  }
+.background {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+}
 
-  /* Reasons */
+/* Reasons */
 
-  .reasons {
-    text-align: center;
-    line-height: 26px;
-  }
+.reasons {
+  text-align: center;
+  line-height: 26px;
+}
 
-  .reasons_arizona {
-    font-size: 21px; 
-    font-weight: bold;
-    color: var(--basic_black);
-  }
+.reasons_arizona {
+  font-size: 21px; 
+  font-weight: bold;
+  color: var(--basic_black);
+}
 
-  /* Features */
+/* Features */
 
-  .features_list {
-    list-style: none;
-  }
-  
-  .feature_item_photo {
-    text-align: center;
-  }
+.features ul {
+  list-style: none;
+}
 
-  .features_item_white {
-    background-color: var(--light_blue);
-    color: var(--basic_white);
-    width: 400px;
-    height: 256px;
-    text-align: center;
-  }
-  
-  .features_item_white h3{
-    font-size: 21px; 
-    font-weight: bold;
-    line-height: 21px;
-  }
+.feature_item_photo {
+  text-align: center;
+}
 
-  .features_item_pic {
-    text-align: center;
-  }
-  
-  .features_item_pic h3 {
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 21px;
-    color: var(--basic_black);
-  }
+.features_item_white {
+  background-color: var(--light_blue);
+  color: var(--basic_white);
+  width: 400px;
+  height: 256px;
+  text-align: center;
+}
 
-  .features_item {
-    text-align: center;
-    background-color: var(--light_grey);
-  }
+.features_item_white h3{
+  font-size: 21px; 
+  font-weight: bold;
+  line-height: 21px;
+}
 
-  .features_item h3 {
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 21px;
-    color: var(--basic_black);
-  }
+.features_item_pic {
+  text-align: center;
+}
 
-  /* Find hotel */
+.features_item_pic h3 {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 21px;
+  color: var(--basic_black);
+}
 
-  .find_hotel {
-    background-color: var(--basic_white);
-    color: var(--basic_black);
-    line-height: 24px;
-    text-align: center;
-  }
+.features_item {
+  text-align: center;
+  background-color: var(--light_grey);
+}
 
-  .find_hotel_quest {
-    font-size: 30px;
-    font-weight: bold;
-  }
+.features_item h3 {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 21px;
+  color: var(--basic_black);
+}
 
-  .button_find_hotel {
-    background: var(--light_brown);
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: bold;
-  }
+/* Find hotel */
 
-  .button_find_hotel:hover {
-    background-color: var(--basic_brown);
-  }
+.find_hotel {
+  background-color: var(--basic_white);
+  color: var(--basic_black);
+  line-height: 24px;
+  text-align: center;
+}
 
-  .button_find_hotel:active {
-    background-color: var(--dark-brown);
-    color: rgba(255, 255, 255, 0.3);
-  }
+.find_hotel_quest {
+  font-size: 30px;
+  font-weight: bold;
+}
 
-  /* Forma */
+.button_find_hotel {
+  background: var(--light_brown);
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--basic_white);
+  text-align: center;
+}
 
-  .form {
-    background-color: var(--basic_white);
-  }
+.button_find_hotel:hover {
+  background-color: var(--basic_brown);
+}
 
-  .form_item {
-    color: var(--basic_black);
-    line-height: 26px;
-    font-weight: bold;
-  }
+.button_find_hotel:active {
+  background-color: var(--dark-brown);
+  color: rgba(255, 255, 255, 0.3);
+}
 
-  .button_form {
-    background-color: var(--light_blue);
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: bold;
-  }
+/* Form */
 
-  .button_form:hover {
-    background-color: var(--basic_blue);
-  }
+.form {
+  background-color: var(--basic_white);
+}
 
-  .button_form:active {
-    background-color: var(--dark_blue);
-    color: rgba(255, 255, 255, 0.3);
-  }
+.form_item {
+  color: var(--basic_black);
+  line-height: 26px;
+  font-weight: bold;
+}
 
-  /* Footer */
+.button_form {
+  background-color: var(--light_blue);
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--basic_white);
+  text-align: center;
+}
 
-  .main-footer {
-    background-color: var(--basic_white);
-    opacity: 0.9;
-  }
+.button_form:hover {
+  background-color: var(--basic_blue);
+}
 
-  .footer_contacts {
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: bold;
-    color: var(--basic_black)
-  }
+.button_form:active {
+  background-color: var(--dark_blue);
+  color: rgba(255, 255, 255, 0.3);
+}
 
-  .footer_social {
-    list-style: none;
-  }
+.form_item input {
+  background-color: var(--light_neutral);
+  color: var(--basic_black);
+  text-transform: uppercase;
+  line-height: 26px;
+  font-weight: bold;
+}
 
-  .social_button {
-    background-color: var(--light_blue);
-  }
+/* Footer */
 
-  .social_button:hover {
-    background-color: var(--basic_blue);
-  }
+.main-footer {
+  background-color: var(--basic_white);
+  opacity: 0.9;
+}
 
-  .social_button:active {
-    background-color: var(--dark_blue);
-  }
+.footer_contacts {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--basic_black)
+}
 
-  .footer_copyright {
-    line-height: 26px;
-  }
+.footer_social {
+  list-style: none;
+}
+
+.social_button {
+  background-color: var(--light_blue);
+}
+
+.social_button:hover {
+  background-color: var(--basic_blue);
+}
+
+.social_button:active {
+  background-color: var(--dark_blue);
+}
+
+.footer_copyright {
+  line-height: 26px;
+}
