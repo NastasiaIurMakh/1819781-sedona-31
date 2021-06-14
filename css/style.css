@@ -34,6 +34,8 @@
     --light_grey: #EEEEEE;
     --light_neutral: #f2f2f2;
     --basic_white: #FFFFFF;
+    --shadow_grey: rgba(255, 255, 255, 0.3);
+    --shadow_black: rgba(0, 0, 0, 0.3);
 }
 
 /* Global */
@@ -88,12 +90,12 @@ img {
   color: var(--light_blue);
 }
 
-.site_navigation a:active {
-  color: rgba(0, 0, 0, 0.3);
-}
-
 .site_navigation a:focus {
   color: var(--light_brown);
+}
+
+.site_navigation a:active {
+  color: var(--shadow_black);
 }
 
 /* Welcome */
@@ -193,7 +195,7 @@ img {
 
 .button_find_hotel:active {
   background-color: var(--dark_brown);
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--shadow_grey);
 }
 
 /* Form */
@@ -224,7 +226,7 @@ img {
 
 .button_form:active {
   background-color: var(--dark_blue);
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--shadow_grey);
 }
 
 .form_item input {
@@ -306,39 +308,40 @@ img {
   color: var(--basic_black);
 }
 
-.hotels_catalog_sort li {
-  color: rgba(0, 0, 0, 0.3);
+.sort {
+  color: var(--shadow_black);
   text-decoration: underline 1px dashed var(--light_blue);
 }
 
-.hotels_catalog_sort li:hover {
+.sort:hover {
   color: var(--light_blue);
   text-decoration: underline 1px dashed var(--light_blue);
 }
 
-.hotels_catalog_sort li:active {
+.sort_focus,
+.sort:focus {
+  color: var(--light_blue);
+  text-decoration: none;
+}
+
+.sort:active {
+  text-decoration: none;
   color: var(--basic_black);
-  text-decoration: none;
 }
 
-.hotels_catalog_sort li:focus {
-  color: var(--light_blue);
-  text-decoration: none;
-}
-
-.hotels_catalog a {
+.hotels_catalog h3 {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: var(--basic_black);
 }
 
-.hotels_catalog a:hover {
+.hotels_catalog h3:hover {
   color: var(--light_blue);
 }
 
-.hotels_catalog a:active {
-  color: rgba(0, 0, 0, 0.3);
+.hotels_catalog h3:active {
+  color: var(--shadow_black);
 }
 
 .button_detail {
@@ -356,7 +359,7 @@ img {
 }
 
 .button_detail:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--shadow_grey);
   background-color: var(--dark_blue);
 }
 
@@ -375,7 +378,7 @@ img {
 }
 
 .button_reserv:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--shadow_grey);
   background-color: var(--dark_brown);
 }
 
