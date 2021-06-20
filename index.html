@@ -17,6 +17,7 @@
         <ul class="site_navigation">
           <li><a href="">Информация</a></li>
           <li><a href="">Фото и видео</a></li>
+          <li></li>
           <li><a href="">Карта штата</a></li>
           <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
@@ -26,20 +27,20 @@
     <main class="container">
       
       <div class="background"><img src="img/welcome_to_sedona.svg" width="457" height="351" 
-        alt="надпись Welcome to te gorgeous Sedona. Because the Grand Canyon sucks"></div>
+        alt="надпись Welcome to the gorgeous Sedona. Because the Grand Canyon sucks"></div>
                   
-      <h1>Туристический город Седона в Аризоне</h1>
+      <h1 hidden="true">Туристический город Седона в Аризоне</h1>
 
       <section class="reasons">
-        <h2>О городе</h2>
+        <h2 hidden="true">О городе</h2>
         <p class="reasons_arizona">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
 
       <section class="features">
-        <h2>Преимущества</h2>
+        <h2 hidden="true">Преимущества</h2>
         <ul>
-          <li class="features_item_photo">
+          <li class="features_item_photo_real_sity">
             <div class="features_item_white">
               <h3>Настоящий городок</h3>
               <p>— №1 —</p>
@@ -47,44 +48,48 @@
             </div>
             <img src="img//sedona_real_city.jpg" width="800" height="256" alt="Зеленое ретро здание, горы, флаг">
           </li>
-          <li class="features_item_pic">
-            <img src="img/house.svg" width="75" height="72" alt="простой рисунок дома">
-            <h3>Жильё</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-          </li>
-          <li class="features_item_pic">
-            <img src="img/food.svg" width="75" height="70" alt="простой рисунок бургера">
-            <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li class="features_item_pic">
-            <img src="img/gift.svg" width="64" height="77" alt="простой рисунок подарка">
-            <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
-          </li>
-          <li class="features_item_photo">
+          <div class="features_item_pictures">
+            <li class="houses">
+              <img src="img/house.svg" width="75" height="72" alt="простой рисунок дома">
+              <h3>Жильё</h3>
+              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </li>
+            <li class="food">
+              <img src="img/food.svg" width="75" height="70" alt="простой рисунок бургера">
+              <h3>Еда</h3>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="gifts">
+              <img src="img/gift.svg" width="64" height="77" alt="простой рисунок подарка">
+              <h3>Сувениры</h3>
+              <p>Не только китайского, но и местного производства!</p>
+            </li>
+          </div>
+          <li class="features_item_photo_bridge">
             <div class="features_item_white">
               <h3>Там есть Мост дьявола</h3>
               <p>— №2 —</p>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
-            <img src="img/sedona_devil's_bridge.jpg" width="800" height="256" alt="Природный мост в каньоне города Седона">
+            <img class="bridge" src="img/sedona_devil's_bridge.jpg" width="800" height="256" alt="Природный мост в каньоне города Седона">
           </li>
-          <li class="features_item">
-            <h3>небольшая площадь</h3>
-            <p>— №3 —</p>
-            <p>все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="features_item">
-            <h3>красивая дорога</h3>
-            <p>— №4 —</p>
-            <p>ехать в седону из лас-вегаса совсем не скучно!</p>
-          </li>
-          <li class="features_item">
-            <h3>мало туристов</h3>
-            <p>— №5 —</p>
-            <p>большинство едет в гранд каньон и толпится там</p>
-          </li>
+          <div class="features_item">
+            <li class="little_square">
+              <h3>небольшая площадь</h3>
+              <p>— №3 —</p>
+              <p>все достопримечательности находятся очень близко</p>
+            </li>
+            <li class="beauty_road">
+              <h3>красивая дорога</h3>
+              <p>— №4 —</p>
+              <p>ехать в седону из лас-вегаса совсем не скучно!</p>
+            </li>
+            <li class="few_tourists">
+              <h3>мало туристов</h3>
+              <p>— №5 —</p>
+              <p>большинство едет в гранд каньон и толпится там</p>
+            </li>
+          </div>
         </ul>
       </section>
 
@@ -120,7 +125,7 @@
     </main>
 
     <footer class="main-footer">
-      <div>
+      <div class="footer_container">
         <div class="footer_contacts">
           <p>#visitSEDONA</p>
           <p>+7 800 555-86-28</p>
