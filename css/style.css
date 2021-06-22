@@ -41,7 +41,8 @@
 /* Global */
 
 body {
-  min-width: 960px;
+  min-width: 960px;  
+  min-height: 100%;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -51,7 +52,6 @@ body {
   color: var(--text_brown);
   text-transform: uppercase;
   background-color: var(--basic_white);
-  min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
@@ -84,7 +84,7 @@ img {
   grid-template-columns: 1fr;
   width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 ;
 }
 
 .main_header_logo {
@@ -100,26 +100,24 @@ img {
   line-height: 26px;
   font-weight: bold;
   color: var(--basic_black);
-  background-color: transparent;
   grid-column: 1;
   grid-row: 1;
   display: grid;
-  grid-template-columns: repeat(5, 1fr); 
+  grid-template-columns: repeat(4, 1fr); 
   margin: 0;
+  padding-top: 15px;
+  padding-left: 72px;
+  padding-right: 72px;
 }
 
-.site_navigation li {
-  justify-self: center;
-  align-content: center;
-  margin-top: 15px;
+.site_navigation li:nth-child(1),
+.site_navigation li:nth-child(2){
+  justify-self: start;
 }
 
-/* Container */
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 10px;
+.site_navigation li:nth-child(3),
+.site_navigation li:nth-child(4){
+  justify-self: end;
 }
 
 /* User navigation */
@@ -140,12 +138,24 @@ img {
   color: var(--shadow_black);
 }
 
+/* Container */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 /* Welcome */
 
 .background {
   background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
   text-align: center;
+  height: 509px;
+  padding: 0;
+  margin: 0;
+  padding-top: 76px;
 }
 
 /* Reasons */
@@ -153,12 +163,21 @@ img {
 .reasons {
   text-align: center;
   line-height: 26px;
+  height: 216px;
+  padding: 0;
+  margin: 0;
+  padding-top: 42px;
 }
 
 .reasons_arizona {
   font-size: 21px; 
   font-weight: bold;
   color: var(--basic_black);
+  margin-left: auto;
+  margin-right: auto;
+  width: 470px;
+  height: 80px;
+  margin-bottom: 16px;
 }
 
 /* Features */
@@ -166,134 +185,80 @@ img {
 .features {
   margin: 0;
   padding: 0;
+  height: 1098px;
 }
 
 .features ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  height: 1098px;
   display: grid;
-  grid-template-columns: repeat(3, 400);
+  grid-template-columns: 400px 400px 400px;
   grid-template-rows: 256px 330px 256px 256px;
 }
 
 .features_item_photo_real_sity {
-  grid-column: 1 / -1;
+  grid-column: 1/-1;
   grid-row: 1;
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: 400px 800px;
 }
 
 .features_item_photo_bridge {
-  grid-column: 1 / -1;
+  grid-column: 1/-1;
   grid-row: 3;
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: 800px 400px;
+  grid-template-rows: 256px;
+}
+
+.features_item_photo_bridge div {
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .features_item_photo_bridge img {
   grid-column: 1;
   grid-row: 1;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 33px;
 }
 
-.features_item_photo_bridge .features_item_white {
-  grid-column: 2;
-  grid-row: 1;
-}
-
-.features_item_pictures {
-  grid-column: 1/-1;
-  grid-row: 2;
-  display: grid;
-  grid-column: repeat(3, 400px);
-}
-
-.houses {
-  grid-column: 1;
-  grid-row: 1;
-  text-align: center;
-  margin: auto;
-}
-
-.food {
-  grid-column: 2;
-  grid-row: 1;
-  text-align: center;
-  margin: auto;
-}
-
-.gifts {
-  grid-column: 3;
-  grid-row: 1;
-  justify-self: center;
-  align-content: center;
-  text-align: center;
-  margin: auto;
-}
-
-.features_item {
-  grid-column: 1/-1;
-  grid-row: 4;
-  display: grid;
-  grid-column: repeat(3, 400px);
-}
-
-.little_square {
-  grid-column: 1;
-  grid-row: 1;
-  text-align: center;
-  margin: auto;
-}
-
-.beauty_road {
-  grid-column: 2;
-  grid-row: 1;
-  text-align: center;
-  margin: auto;
-}
-
-.few_tourists {
-  grid-column: 3;
-  grid-row: 1;
-  text-align: center;
-  margin: auto;
-}
-
-.features_item_white {
+.features_item_blue {
   background-color: var(--light_blue);
   color: var(--basic_white);
-  width: 400px;
-  height: 256px;
   text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: 0;
+  padding: 0;
+  padding-top: 47px;
 }
 
-.features_item_white h3{
+.features_item_blue h3{
   font-size: 21px; 
   font-weight: bold;
   line-height: 21px;
 }
 
-.features_item_pic {
+.features_item_white {
+  background-color: var(--basic_white);
   text-align: center;
+  padding-top: 35px;
 }
 
-.features_item_pic h3 {
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 21px;
-  color: var(--basic_black);
-}
-
-.features_item {
-  text-align: center;
+.features_item_grey {
   background-color: var(--light_grey);
+  text-align: center;
+  padding-top: 47px;
 }
 
-.features_item h3 {
-  font-size: 21px;
+.features_item_white h3,
+.features_item_grey h3 {
+  font-size: 21px; 
   font-weight: bold;
   line-height: 21px;
   color: var(--basic_black);
@@ -306,6 +271,7 @@ img {
   color: var(--basic_black);
   line-height: 24px;
   text-align: center;
+  padding-top: 58px;
 }
 
 .find_hotel_quest {
@@ -321,6 +287,8 @@ img {
   text-transform: uppercase;
   color: var(--basic_white);
   text-align: center;
+  width: 568px;
+  height: 86px;
 }
 
 .button_find_hotel:hover {
@@ -336,6 +304,12 @@ img {
 
 .form {
   background-color: var(--basic_white);
+  width: 568px;
+  height: 395px;
+  padding-top: 55px;
+  text-align: center;  
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form_item {
@@ -348,6 +322,8 @@ img {
   background-color: var(--light_blue);
   font-size: 21px;
   line-height: 26px;
+  width: 458px;
+  height: 58px;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--basic_white);
@@ -526,17 +502,16 @@ img {
 
 .main-footer {
   background-color: var(--basic_white);
-  opacity: 0.9;
   height: 120px;
 }
 
 .footer_container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   width: 1200px;
   height: 120px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
 }
 
 .footer_contacts {
@@ -544,26 +519,23 @@ img {
   line-height: 26px;
   font-weight: bold;
   color: var(--basic_black);
-  justify-self: center;
+  padding-top: 23px;
 }
 
 .footer_contacts p {
   text-align: center;
   padding: 0;
-  margin-top: 23px;
-  margin-bottom: 3px;
-  vertical-align: middle;
+  margin: 0;
 }
 
 .footer_social {
   list-style: none;
-  justify-self: center;
   padding: 0;
   margin: 0;
-  margin-top: auto;
-  margin-bottom: auto;
   display: grid;
-  grid-template-columns: 48px 48px 48px;
+  justify-content: center;
+  padding-top: 36px;
+  grid-template-columns: 46px 46px 46px;
   grid-template-rows: 48px;
   gap: 6px;
 }
@@ -572,6 +544,8 @@ img {
   justify-self: center;
   width: 46px;
   height: 48px;
+  padding: 0;
+  margin: 0;
   background-color: var(--light_blue);
 }
 
@@ -585,8 +559,7 @@ img {
 
 .footer_copyright {
   line-height: 26px;
-  justify-self: center;
-  margin-top: auto;
-  margin-bottom: auto;
+  text-align: center;
+  padding-top: 43px;
 }
 
