@@ -10,7 +10,7 @@
   <body class="page_body">
     <header class="main_header">
       <nav class="main_navigation">
-        <a href="index.html">
+        <a class="main_header_logo" href="index.html">
           <img src="img/logo_sedona.svg" width="138" height="70" alt="City of Sedona Логотип">
         </a>
         <ul class="site_navigation">
@@ -21,12 +21,12 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>Подбор жилья</h1>
+    <main class="container">
+      <h1 hidden="true">Подбор жилья</h1>
       <section class="catalog">
-        <h2>Параметры жилья</h2>
+        <h2 hidden="true">Параметры жилья</h2>
         <form class="form_catalog" method="get" action="#">
-          <fieldset>
+          <fieldset class="infrastructure">
             <legend>Инфраструктура:</legend>
             <ul>
               <li>
@@ -43,7 +43,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="type_of_hotels">
             <legend>Тип жилья:</legend>
             <ul>
               <li>
@@ -60,7 +60,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="price">
             <legend>Стоимость в сутки, ₽:</legend>
             <div>
               <div>
@@ -72,13 +72,13 @@
               <input type="range" min="0" max="4000" step="10" value="0">
               <input type="range" min="0" max="4000" step="10" value="3000">
             </div>
+            <button class="button_form_catalog" type="submit">Показать</button>
           </fieldset>
-          <button class="button_form_catalog" type="submit">Показать</button>
         </form>
       </section>
       <section class="hotels_catalog">
-        <h2>Список жилья</h2>
-        <div>
+        <h2 hidden="true">Список жилья</h2>
+        <div class="hotels_catalog_find_sort">
           <div class="hotels_catalog_find">
             <p>Найдено: 3</p>
           </div>
@@ -91,16 +91,16 @@
             </ul>
           </div>
         </div>
-        <ul>
+        <ul class="buttons">
           <li><button type="button" name="up"></button></li>
           <li><button type="button" name="down"></button></li>
         </ul>
-        <ul>
+        <ul class="hotels_list">
           <li>
-            <div>
+            <div class="img_hotel">
               <img src="img/catalog/amara_resort_&_spa.jpg" width="135" height="90" alt="Зеленая лужайка и горы во время заката">
             </div>
-            <div>
+            <div class="details_hotel">
               <a href="#"><h3>Amara Resort & Spa</h3></a>
               <div>
                 <p>Гостиница</p>
@@ -111,7 +111,7 @@
                 <button class="button_reserv" type="button">Забронировать</button>
               </div>
             </div>
-            <div>
+            <div class="rating_stars">
               <ul>
                 <li><img src="https://via.placeholder.com/19x17" alt="star"></li>
                 <li><img src="https://via.placeholder.com/19x17" alt="star"></li>
@@ -124,10 +124,10 @@
             </div>
           </li>
           <li>
-            <div>
+            <div class="img_hotel">
               <img src="img/catalog/desert_quail_inn.jpg" width="135" height="90" alt="Бежевый мотель рядом с дорогой на фоне голубого неба, красная табличка">
             </div>
-            <div>
+            <div class="details_hotel">
               <a href="#"><h3>Desert Quail Inn</h3></a>
               <div>
                 <p>Мотель</p>
@@ -138,7 +138,7 @@
                 <button class="button_reserv" type="button">Забронировать</button>
               </div>
             </div>
-            <div>
+            <div class="rating_stars">
               <ul>
                 <li><img src="https://via.placeholder.com/19x17" alt="star"></li>
                 <li><img src="https://via.placeholder.com/19x17" alt="star"></li>
@@ -150,10 +150,10 @@
             </div>
           </li>
           <li>
-            <div>
+            <div class="img_hotel">
               <img src="img/catalog/villas_at_poco_diablo.jpg" width="135" height="90" alt="Желтое здание с красной крышей, окруженное деревьями и зеленой травой">
             </div>
-            <div>
+            <div class="details_hotel">
               <a href="#"><h3>Villas at Poco Diablo</h3></a>
               <div>
                 <p>Апартаменты</p>
@@ -164,7 +164,7 @@
                 <button class="button_reserv" type="button">Забронировать</button>
               </div>
             </div>
-            <div>
+            <div class="rating_stars">
               <ul>
                 <li><img src="https://via.placeholder.com/19x17" alt="star"></li>
                 <li><img src="https://via.placeholder.com/19x17" alt="star"></li>
@@ -178,7 +178,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div>
+      <div class="footer_container">
         <div class="footer_contacts">
           <p>#visitSEDONA</p>
           <p>+7 800 555-86-28</p>
@@ -191,8 +191,8 @@
           <li><a class="social_button" href="#">
             <img src="img/socials/youtube.svg" width="20" height="16" alt="youtube"></a></li>
         </ul>
-        <div>
-          Website by<a class="footer_copyright" href="https://htmlacademy.ru/">
+        <div class="footer_copyright">
+          Website by<a class="footer_copyright" href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo_htmlacademy.svg" width="115" height="33" alt="HTML Academy логотип"></a>
         </div>
       </div>
