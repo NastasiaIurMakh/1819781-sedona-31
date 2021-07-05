@@ -84,7 +84,7 @@ img {
   grid-template-columns: 1fr;
   width: 1200px;
   margin: 0 auto;
-  padding: 0 ;
+  padding: 0;
 }
 
 .main_header_logo {
@@ -153,23 +153,23 @@ img {
   background-repeat: no-repeat;
   height: 509px;
   display: flex;
-}
-
-.background img {
-  margin: auto;
-  margin-top: 77px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Reasons */
 
 .reasons {
-  min-height: 216px;
+  min-height: 175px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding-top: 41px;
 }
 
 .reasons p {
-  margin: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .reasons .reasons_arizona {
@@ -180,19 +180,16 @@ img {
   width: 470px;
   height: 80px;
   text-align: center;
-  margin-top: 42px;
+  margin: 0;
   margin-bottom: 16px;
   padding: 0;
-}
-
-.reasons p:last-child {
-  margin-top: 0;
 }
 
 /* Features */
 
 .features {
   min-height: 1098px;
+  margin-bottom: 58px;
 }
 
 .features ul {
@@ -240,6 +237,8 @@ img {
   color: var(--basic_white);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .features_item_blue h3{
@@ -247,48 +246,51 @@ img {
   font-weight: bold;
   line-height: 21px;
   width: 150px;
-  min-height: 43px;
-  margin: auto;
+  height: 43px;
+  margin: 0;
+  padding: 0;
   margin-bottom: 25px;
   text-align: center;
 }
 
 .features_item_blue p {
-  margin: auto;
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
   margin-bottom: 23px;
   text-align: center;
 }
 
 .features_item_blue p:last-child {
   width: 320px;
-  min-height: 43px;
-  margin-bottom: 54px;
+  height: 43px;
+  margin: 0;
 }
 
 .features_item_white {
   background-color: var(--basic_white);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .features_item_white img {
-  margin: auto;
+  margin: 0;
+  padding: 0;
   margin-bottom: 28px;
 }
 
 .features_item_white h3 {
-  margin: auto;
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
   margin-bottom: 25px;
 }
 
 .features_item_white p {
   width: 300px;
-  min-height: 43px;
-  margin: auto;
-  margin-top: 0;
-  margin-bottom: 82px;
+  height: 43px;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
@@ -296,25 +298,29 @@ img {
   background-color: var(--light_grey);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .features_item_grey h3 {
   width: 125px;
-  margin: auto;
+  margin: 0;
+  padding: 0;
   margin-bottom: 25px;
   text-align: center;
 }
 
 .features_item_grey p {
-  margin: auto;
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
   margin-bottom: 25px;
   text-align: center;
 }
 
 .features_item_grey p:last-child {
   width: 262px;
-  margin-bottom: 54px;
+  margin: 0;
+  padding: 0;
 }
 
 .features_item_white h3,
@@ -331,27 +337,27 @@ img {
   background-color: var(--basic_white);
   color: var(--basic_black);
   line-height: 24px;
-  margin: auto;
-  margin-top: 58px;
-  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   width: 568px;
   height: 233px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .find_hotel p:first-child {
   font-size: 30px;
   font-weight: bold;
   margin: 0;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0;
 }
 
 .find_hotel p:nth-child(2) {
   text-align: center;
-  margin: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .find_hotel .button_find_hotel {
@@ -365,6 +371,7 @@ img {
   width: 568px;
   height: 86px;
   margin: 0;
+  padding: 0;
 }
 
 .button_find_hotel:hover {
@@ -386,8 +393,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: stretch;
 }
 
 .form_item {
@@ -395,7 +402,7 @@ img {
   line-height: 26px;
   font-weight: bold;
   height: 38px;
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 29px;
 }
 
@@ -408,12 +415,12 @@ img {
   font-size: 21px;
   line-height: 26px;
   height: 58px;
+  width: 458px;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--basic_white);
   text-align: center;
   margin: 0;
-
 }
 
 .button_form:hover {
@@ -726,10 +733,10 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1200px;
+  width: 933px;
   height: 120px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 131px 0 136px;
 }
 
 .footer_contacts {
@@ -740,7 +747,6 @@ img {
   width: 200px;
   margin: 0;
   padding: 0;
-  margin-left: 136px;
 }
 
 .footer_contacts p {
@@ -782,7 +788,6 @@ img {
 .footer_copyright {
   line-height: 26px;
   width: 204px;
-  margin-right: 131px;
   display: flex;
   justify-content: space-between;
   align-items: center;
