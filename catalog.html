@@ -62,7 +62,7 @@
           </fieldset>
           <fieldset class="price">
             <legend>Стоимость в сутки, ₽:</legend>
-            <div>
+            <div class="price_input">
               <div>
                 от<input class="input_form_catalog" type="number" min="0" name="min price" value="0">
               </div>
@@ -90,11 +90,11 @@
               <li><a class="sort" href="">По рейтингу</a></li>
             </ul>
           </div>
+          <ul class="buttons">
+            <li><button type="button" name="up"></button></li>
+            <li><button type="button" name="down"></button></li>
+          </ul>
         </div>
-        <ul class="buttons">
-          <li><button type="button" name="up"></button></li>
-          <li><button type="button" name="down"></button></li>
-        </ul>
         <ul class="hotels_list">
           <li>
             <div class="img_hotel">
@@ -102,7 +102,7 @@
             </div>
             <div class="details_hotel">
               <a href="#"><h3>Amara Resort & Spa</h3></a>
-              <div>
+              <div class="details_price">
                 <p>Гостиница</p>
                 <p>От 4000 ₽</p>
               </div>
@@ -129,7 +129,7 @@
             </div>
             <div class="details_hotel">
               <a href="#"><h3>Desert Quail Inn</h3></a>
-              <div>
+              <div class="details_price">
                 <p>Мотель</p>
                 <p>От 3000 ₽</p>
               </div>
@@ -155,7 +155,7 @@
             </div>
             <div class="details_hotel">
               <a href="#"><h3>Villas at Poco Diablo</h3></a>
-              <div>
+              <div class="details_price">
                 <p>Апартаменты</p>
                 <p>От 2000 ₽</p>
               </div>
@@ -192,9 +192,10 @@
             <img src="img/socials/youtube.svg" width="20" height="16" alt="youtube"></a></li>
         </ul>
         <div class="footer_copyright">
-          Website by<a class="footer_copyright" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/logo_htmlacademy.svg" width="115" height="33" alt="HTML Academy логотип"></a>
+          <p>Website by</p><a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo_htmlacademy.svg" width="115" height="33" alt="HTML Academy логотип"></a>
         </div>
       </div>
     </footer>
-    </body>
+  </body>
+</html>
